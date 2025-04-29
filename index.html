@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligența Artificială - Prezentare</title>
+    <style>
+        /* Stiluri CSS pentru întreaga pagină */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        section {
+            margin: 30px auto;
+            padding: 40px;
+            max-width: 1200px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .animation {
+            width: 200px;
+            height: 200px;
+            margin: 40px auto;
+            background-color: #007bff;
+            border-radius: 50%;
+            animation: rotate 5s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .image-container {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animație de schimbare a culorii la hover pe animația rotativă */
+        .animation:hover {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header-ul site-ului -->
+<header>
+    <h1>Inteligența Artificială</h1>
+    <p>Explorăm lumea tehnologiilor care schimbă viitorul</p>
+</header>
+
+<!-- Secțiunea 1: Ce este Inteligența Artificială -->
+<section>
+    <h2>Ce este Inteligența Artificială?</h2>
+    <p>Inteligența artificială (IA) este un domeniu al informaticii care se ocupă cu crearea de sisteme capabile să execute sarcini care necesită inteligență umană, precum învățarea, recunoașterea vorbirii, recunoașterea imaginilor și luarea de decizii.</p>
+    <div class="animation"></div>
+</section>
+
+<!-- Secțiunea 2: Aplicații ale Inteligenței Artificiale -->
+<section>
+    <h2>Aplicații ale Inteligenței Artificiale</h2>
+    <p>De la asistenți virtuali la mașini autonome, IA este utilizată într-o gamă largă de domenii. Iată câteva exemple:</p>
+    <ul>
+        <li>Asistenți virtuali (ex: Siri, Alexa)</li>
+        <li>Vehicule autonome</li>
+        <li>Diagnostice medicale</li>
+        <li>Recunoașterea facială</li>
+        <li>Automatizarea proceselor industriale</li>
+    </ul>
+    <div class="image-container">
+        <img src="https://via.placeholder.com/800x400?text=Imagine+despre+AI" alt="Aplicații AI">
+    </div>
+</section>
+
+<!-- Secțiunea 3: De ce este importantă Inteligența Artificială? -->
+<section>
+    <h2>De ce este importantă IA?</h2>
+    <p>Inteligența artificială are un impact semnificativ asupra economiei și societății. Aceasta ajută la îmbunătățirea eficienței în diverse industrii, de la sănătate la transporturi, și oferă soluții inovatoare la probleme complexe ale lumii moderne.</p>
+</section>
+
+<!-- Footer-ul site-ului -->
+<footer>
+    <p>&copy; 2025 Inteligența Artificială. Toate drepturile rezervate.</p>
+    <p><a href="https://www.openai.com" target="_blank">Aflați mai multe despre AI</a></p>
+</footer>
+
+<script>
+    // Adăugăm un efect de hover la animația rotativă
+    const animationDiv = document.querySelector('.animation');
+    animationDiv.addEventListener('mouseenter', () => {
+        animationDiv.style.backgroundColor = '#28a745'; // Culoare verde la hover
+    });
+
+    animationDiv.addEventListener('mouseleave', () => {
+        animationDiv.style.backgroundColor = '#007bff'; // Culoare albastră la ieșirea din hover
+    });
+</script>
+
+</body>
+</html>
